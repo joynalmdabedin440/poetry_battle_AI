@@ -18,24 +18,22 @@ This project demonstrates the integration of **NLP, text generation, and semanti
 ## Project Structure
 
 ```
-AI-Poetry-Collaboration/
+poetry_battle/
 │
-├── main.py                  # Main entry point for running the full pipeline
-├── poem_pipeline.py         # Coordinates the two poets and judge
-│
-├── poets/
-│   ├── poet1.py             # Poet 1 (GPT-2 Medium)
-│   ├── poet2.py             # Poet 2 (GPT-Neo 125M)
-│
-├── judge/
-│   └── judge.py             # Evaluates poem quality and similarity
+├── app.py                    # main controller to run the whole pipeline
+├── poem_pipeline.py          # handles collaboration between Poet1, Poet2, and Judge
+├── ai_models/
+│   ├── poet1.py              # Poet 1 agent
+│   ├── poet2.py              # Poet 2 agent
+│   └── judge.py              # Judge agent
 │
 ├── utils/
-│   ├── extractor.py         # Extracts text from PDF/DOCX
-│   ├── audio.py             # Converts final poem to audio using gTTS
+│   ├── extract_text.py       # handles text extraction from PDF/DOC/image
+│   └── tts_output.py         # optional: converts text to audio using gTTS
 │
-├── requirements.txt         # Project dependencies
-└── README.md                # Documentation
+├── requirements.txt
+└── README.md
+
 ```
 
 ---
@@ -45,7 +43,7 @@ AI-Poetry-Collaboration/
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/AI-Poetry-Collaboration.git
+git clone https://github.com/joynalmdabedin440/poetry_battle_AI.git
 cd AI-Poetry-Collaboration
 ```
 
@@ -104,20 +102,6 @@ Audio saved as poem_output.mp3
 ```
 
 **Audio Output:** `poem_output.mp3` will be automatically saved in your project folder.
-
----
-
-
-```
-assets/
-└── sample_output.png
-```
-
-Then reference in README:
-
-```markdown
-![Poem Output Example](assets/sample_output.png)
-```
 
 ---
 
