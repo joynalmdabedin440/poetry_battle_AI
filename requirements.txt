@@ -1,0 +1,9 @@
+requests
+transformers
+torch
+sentence-transformers
+gtts
+pdfplumber
+python-docx
+pytesseract
+Pillow
