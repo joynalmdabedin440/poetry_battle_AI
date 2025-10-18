@@ -44,7 +44,7 @@ poetry_battle/
 
 ```bash
 git clone https://github.com/joynalmdabedin440/poetry_battle_AI.git
-cd AI-Poetry-Collaboration
+cd poetry_battle_AI
 ```
 
 2. **Create a virtual environment (recommended)**
